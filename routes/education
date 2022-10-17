@@ -3,7 +3,7 @@ const Router=express.Router();
 const mysqlConnection=require("../connection");
 Router.get("/",(req,res)=>{
     mysqlConnection.query("SELECT * from firstdb.education",(err,rows,fields)=>{
-        if(!err){0
+        if(!err){
             res.send(rows);
         }
         else{

@@ -10,7 +10,11 @@ Router.get("/",(req,res)=>{
         else{
             console.log(err);
         }
-    })
+    });
+
 
 })
+// Router.post("/",(req,res)=>{
+//     mysqlConnection
+// })
 module.exports=Router;
